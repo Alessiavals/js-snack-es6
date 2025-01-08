@@ -89,3 +89,36 @@ function capitalizeWord(persone) {
 
 const nomiFormattati = capitalizeWord(persone)
 console.log(nomiFormattati)
+
+// SNACK 3
+
+const animali = [
+    {
+        nome: 'Gatto',
+        famiglia: 'Felidi',
+        classe: 'Mammifero',
+    },
+    {
+        nome: 'Elefante',
+        famiglia: 'Elephantidae',
+        classe: 'Mammifero',
+    },
+    {
+        nome: 'Gallina',
+        famiglia: 'Fasianidi',
+        classe: 'Uccelli',
+    }
+]
+
+const animaliMammiferi = []
+
+for (let index = 0; index < animali.length; index++) {
+    const animale = animali[index];
+    if (animale.classe === "Mammifero") {
+        animaliMammiferi.push(animale)
+        
+    }
+    
+}
+
+console.log(animaliMammiferi)
