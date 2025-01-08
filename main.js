@@ -75,3 +75,17 @@ for (let index = 0; index < automobili.length; index++) {
 console.log(autoBenzina)
 console.log(autoDiesel)
 console.log(altreAuto)
+
+// 2 SNACK
+
+const persone = ['aldo', 'GIOVANNI', 'giacomO']
+
+
+function capitalizeWord(persone) {
+    return persone.map(string => {
+        return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase()
+    })
+}
+
+const nomiFormattati = capitalizeWord(persone)
+console.log(nomiFormattati)
