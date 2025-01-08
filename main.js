@@ -122,3 +122,31 @@ for (let index = 0; index < animali.length; index++) {
 }
 
 console.log(animaliMammiferi)
+
+// SNACK 4
+
+const people = [
+    {
+        nome: 'Mario',
+        cognome: 'Rossi',
+        eta: 20
+    },
+    {
+        nome: 'Luca',
+        cognome: 'Bianchi',
+        eta: 30
+    },
+    {
+        nome: 'Paolo',
+        cognome: 'Neri',
+        eta: 17
+    }
+]
+
+const frasi = people.map(persona => {
+    const puoGuidare = persona.eta >= 18 ? "può guidare" : "non può guidare";
+
+    return `${persona.nome} ${persona.cognome} ha ${persona.eta} e ${puoGuidare}`;
+});
+
+console.log(frasi)
