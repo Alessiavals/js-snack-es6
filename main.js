@@ -59,9 +59,7 @@ const autoBenzina = [];
 const autoDiesel = [];
 const altreAuto = [];
 
-for (let index = 0; index < automobili.length; index++) {
-    const auto = automobili[index];
-
+const inserisciAuto = automobili.filter(auto => {
     if (auto.alimentazione === 'Benzina') {
         autoBenzina.push(auto)
     } else if (auto.alimentazione === 'Diesel') {
@@ -69,8 +67,7 @@ for (let index = 0; index < automobili.length; index++) {
     } else {
         altreAuto.push(auto)
     }
-    
-}
+})
 
 console.log(autoBenzina)
 console.log(autoDiesel)
